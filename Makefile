@@ -31,7 +31,7 @@ git_push: git_init_remote
 git_push_latest:
 	git add .
 	git commit -m 'comment'
-	$(MAKE) git_push
+	git push
 
 git_rename_remoteName:
 	git remote -v
