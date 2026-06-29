@@ -22,10 +22,12 @@ git_create_repo:
 
 git_clone_project:
 	git clone $(PROJECT_URL)
+git_create_branch:
+	git branch -M $(BRANCH_NAME)
 git_init_remote:
 	git remote add $(REMOTE_NAME)  $(PROJECT_URL)
 	git remote -v
-git_push: git_init_remote
+git_push: git_init_remote git_create_branch
 	git push -u $(REMOTE_NAME) $(BRANCH_NAME)
 
 git_push_latest:
