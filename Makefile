@@ -21,12 +21,12 @@ git_create_repo:
 	git status
 
 git_clone_project:
-	git clone $PROJECT_URL
+	git clone $(PROJECT_URL)
 git_init_remote:
-	git remote add $REMOTE_NAME  $PROJECT_URL
+	git remote add $(REMOTE_NAME)  $(PROJECT_URL)
 	git remote -v
 git_push: git_init_remote
-	git push -u $REMOTE_NAME $BRANCH_NAME
+	git push -u $(REMOTE_NAME) $(BRANCH_NAME)
 
 git_push_latest:
 	git add .
@@ -35,4 +35,4 @@ git_push_latest:
 
 git_rename_remoteName:
 	git remote -v
-	git remote rename $REMOTE_NAME base
+	git remote rename $(REMOTE_NAME) base
