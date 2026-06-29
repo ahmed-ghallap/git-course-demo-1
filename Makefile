@@ -1,6 +1,6 @@
 PROJECT_URL='https://github.com/ahmed-ghallap/git-course-demo-1.git'
 REMOTE_NAME='origin'
-BRANCH_NAME='Branch_Name'
+BRANCH_NAME='main'
 
 #to create a repo on github go to 'repo.new'
 
